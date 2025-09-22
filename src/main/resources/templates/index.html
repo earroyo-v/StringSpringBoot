@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="">
+
+<head>
+	<title>Strings</title>
+</head>
+
+<body>
+	<h1>Practica - Strings</h1>
+	<form action="/ejercicio1" method="post">
+		<label>Ejercicio 1</label>
+		<input type="text" name="val" placeholder="Escribe el String">
+		<input type="submit" value="Contar">
+	</form>
+	<p th:if="${m1}" th:text="${m1}"></p>
+	<br />
+	<form action="/ejercicio2" method="post">
+		<label>Ejercicio 2 </label>
+		<input type="text" name="val" placeholder="Escribe el String">
+		<input type="submit" value="Mayúsculas">
+	</form>
+	<p th:if="${m2}" th:text="${m2}"></p>
+	<br />
+	<form action="/ejercicio3" method="post">
+		<label>Ejercicio 3 </label>
+		<input type="text" name="val" placeholder="Escribe el String">
+		<input type="submit" value="Minúsculas">
+	</form>
+	<p th:if="${m3}" th:text="${m3}"></p>
+	<br />
+</body>
+
+</html>
